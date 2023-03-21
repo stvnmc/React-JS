@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { LEVELS } from '../../models/level.enum'
 import { Task } from '../../models/task.class'
 import TaskComponent from '../pure/task'
@@ -8,7 +8,7 @@ const TaskListComponent = () => {
     const defaultTask = new Task('Example', 'Deafult description', false, LEVELS.NORMAL)
 
     // Control del ciclo de vida del componete
-    const [task, setTasks] = useState([defaultTask])
+    const [tasks, setTasks] = useState([defaultTask])
     const [loading, setLoading] = useState(true)
 
     // Control del ciclo de vida del componente
@@ -18,16 +18,17 @@ const TaskListComponent = () => {
         return () => {
             console.log('TaskList component is going to unmount...')
         }
-    }, [task])
+    }, [tasks])
 
-    const changeCompleted = (id) => {
+    const changeCompleted = () => {
         console.log('Todo: Cambiar estado de una tarea ')
     }
 
+    console.log(changeCompleted)
     return (
         <div>
             <div>
-                Your Tasks:
+                <h1>Your Tasks:</h1>
             </div>
             {/* TODO: Aplicar un For/Map para renderzar una lista */}
 

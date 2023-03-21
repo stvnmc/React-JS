@@ -4,9 +4,11 @@ import './App.css';
 // import Ejemplo2 from './hooks/Ejemplo2'
 // import MicomponenteConContexto from './hooks/Ejemplo3';
 // import Ejemplo1 from './hooks/Ejemplo1'
-import Ejemplo4 from './hooks/Ejemplo4'
+// import Ejemplo4 from './hooks/Ejemplo4'
 // import GreetingF from './components/pure/greetingF';
 // import TaskListComponent from './components/container/task_list';
+import GreentingStyled from './components/pure/forms/greetingStyled'
+
 
 function App() {
   return (
@@ -24,12 +26,13 @@ function App() {
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2> */}
         {/* <MicomponenteConContexto></MicomponenteConContexto> */}
-        <Ejemplo4 nombre="steven">
-          {/* Todo lo que hay aqui, estratado como props.children */}
+        {/* Todo lo que hay aqui, estratado como props.children */}
+        {/* <Ejemplo4 nombre="steven">
           <h2>
             Contenido del props.children
           </h2>
-        </Ejemplo4>
+        </Ejemplo4> */}
+        <GreentingStyled name='Steven'></GreentingStyled>
       </header>
     </div>
   );
