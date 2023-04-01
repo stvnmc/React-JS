@@ -1,22 +1,26 @@
-// Componente que va acontener un formulario para 
-// autenticacion de usuarios.
+/**
+ * Componente que va a contener un formulario para
+ * autenticación de usuarios.
+ */
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-export const LoginForm = () => {
+const Loginform = () => {
 
     const initialCredentials = [
         {
             user: '',
             password: ''
         }
-    ]
+    ];
 
-    const [credentials, setCredentials] = useState(initialCredentials)
+    const [credentials, setCredentials] = useState(initialCredentials);
 
     return (
         <div>
             
         </div>
-    )
+    );
 }
+
+export default Loginform;

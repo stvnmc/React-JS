@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 
-
-
 class Greeting extends Component {
 
-    constructor(props) {
+
+    constructor(props){
         super(props);
         this.state = {
-            age: 29,
-            name: "steve"
+           age : 29
         }
     }
 
@@ -18,43 +16,35 @@ class Greeting extends Component {
         return (
             <div>
                 <h1>
-                    Hola! {this.props.name}
+                    ¡HOLA { this.props.name } !
                 </h1>
                 <h2>
-                    Tue edad es:{this.state.age}
+                    Tu edad es de: { this.state.age }
                 </h2>
                 <div>
                     <button onClick={this.birthday}>
                         Cumplir años
                     </button>
-                    <button onClick={this.birthday1}>
-                        quitar 
-
-                    </button>
                 </div>
             </div>
-        )
+        );
     }
 
     birthday = () => {
         this.setState((prevState) => (
             {
-                age: prevState.age + 1
+                age: prevState.age +1
             }
         ))
     }
-  
-    birthday1 = () => {
-        this.setState((prevState) => (
-            {
-                age: prevState.age - 1
-            }
-        ))
-    }
+
+
 }
 
-Greeting.propType = {
+
+Greeting.propTypes = {
     name: PropTypes.string,
 };
+
 
 export default Greeting;

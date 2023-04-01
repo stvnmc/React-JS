@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-export const registerForm = () => {
+const Registerform = () => {
+
     const initialData = [
         {
             user: '',
@@ -8,11 +9,15 @@ export const registerForm = () => {
             email: '',
             password: ''
         }
-    ]
+    ];
 
-    const [data, setData] = useState(initialData)
+    const [data, setData] = useState(initialData);
 
     return (
-        <div>registerForm</div>
-    )
+        <div>
+            
+        </div>
+    );
 }
+
+export default Registerform;

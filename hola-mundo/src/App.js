@@ -1,39 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
-// import Usuario from './components/container/ComponenteA';
-// import Ejemplo2 from './hooks/Ejemplo2'
-// import MicomponenteConContexto from './hooks/Ejemplo3';
-// import Ejemplo1 from './hooks/Ejemplo1'
-// import Ejemplo4 from './hooks/Ejemplo4'
-// import GreetingF from './components/pure/greetingF';
+import { Practica10 } from './components/pure/practica1';
+// import Optionalrender from './components/pure/optionalRender';
+// import Greeting from './components/pure/greeting';
+// import Greetingf from './components/pure/greetingF';
 // import TaskListComponent from './components/container/task_list';
-import GreentingStyled from './components/pure/forms/greetingStyled'
-
+// import Ejemplo1 from './hooks/Ejemplo1';
+// import Ejemplo2 from './hooks/Ejemplo2';
+// import MiComponenteConContexto from './hooks/Ejemplo3'
+// import Ejemplo4 from './hooks/Ejemplo4';
+// import Greetingstyled from './components/pure/greetingStyled';
+// import Father from './components/container/father';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {/* componente propio Greenting.jsx */}
-        {/* <Greeting name="stevenn"></Greeting> */}
-        {/* Componente de ejemplos funcinales */}
-        {/* <GreetingF name="stevenn"></GreetingF> */}
-        {/* Componente de Listado de Tareas */}
-        {/* <TaskListComponent></TaskListComponent> */}
-        {/* <Usuario></Usuario> */}
-        {/* Ejemplos de uso de HOOKS */}
-        {/* <Ejemplo1></Ejemplo1> */}
-        {/* <Ejemplo2></Ejemplo2> */}
-        {/* <MicomponenteConContexto></MicomponenteConContexto> */}
-        {/* Todo lo que hay aqui, estratado como props.children */}
-        {/* <Ejemplo4 nombre="steven">
-          <h2>
+      {/* <header className="App-header"> */}
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      {/* Componente propio Greeting.jsx */}
+      {/* <Greeting name={"Martín"}></Greeting> */}
+      {/* Componente de ejemplo funcional */}
+      {/* <Greetingf name="Martín"></Greetingf> */}
+      {/* Componente de Listado de Tareas */}
+      {/* <TaskListComponent></TaskListComponent> */}
+      {/* Ejemplos de uso de HOOKS */}
+      {/* <Ejemplo1></Ejemplo1> */}
+      {/* <Ejemplo2></Ejemplo2> */}
+      {/* <MiComponenteConContexto></MiComponenteConContexto> */}
+      {/* Todo loq ue hay aquí, es tratado como props.children */}
+      {/* <Ejemplo4 nombre="Martín">
+          <h3>
             Contenido del props.children
-          </h2>
+          </h3>
         </Ejemplo4> */}
-        <GreentingStyled name='Steven'></GreentingStyled>
-      </header>
+      {/* <Greetingstyled name="Martín"></Greetingstyled> */}
+      {/* </header> */}
+      {/* Gestión de eventos */}
+      {/* <Father></Father> */}
+      {/* Ejemplos de Renderozadp condicional */}
+      {/* <Optionalrender></Optionalrender> */}
+
+      {/* PROYECTO FINAL */}
+      {/* <TaskListComponent></TaskListComponent> */}
+
+
+      <Practica10></Practica10>
     </div>
   );
 }

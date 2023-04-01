@@ -1,15 +1,15 @@
-// Ejemplo de uso de metodos componentDidUpdate en componente de clase
-// y uso de hook en componente funcional
-
+/**
+ * Ejemplo de uso de método componentDidUpdate en componente de clase
+ * y uso de hook en componete funcional
+ */
 
 import React, { Component, useEffect } from 'react'
 
-export default class DidUpdate extends Component {
+export class DidUpdate extends Component {
 
-    componentDidUpdate() {
-        console.log('Comportamiento cuando el componenete resive nuevos props o cambio en el estado privado')
+    componentDidUpdate(){
+        console.log('Comportamiento cuando el componente recibe nuevos props o cambio en su estado privado')
     }
-
 
     render() {
         return (
@@ -21,14 +21,15 @@ export default class DidUpdate extends Component {
 }
 
 
-export const DidUpdateHook = () => {
+export const DidupdateHook = () => {
 
-useEffect(() => {
-
-})
-
+    useEffect(() => {
+        console.log('Comportamiento cuando el componente recibe nuevos props o cambio en su estado privado')
+    });
 
     return (
-        <div>DidUpdate</div>
-    )
+        <div>
+            <h1>DidUpdate</h1>
+        </div>
+    );
 }

@@ -1,37 +1,43 @@
-//Ejemplo de componente de tipo clase que dispone delos metodos de ciclo de vida
+/**
+ * Ejemplo de componente de tipo clase que dispone de los
+ * métodos de ciclo de vida
+ */
 
-import Reac, { Component } from "react";
-
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class LifeCycleExample extends Component {
+    
     constructor(props) {
         super(props)
-        console.log('constructor: cuando se instancia el componente')
+        console.log('CONSTRUCTOR: Cuando se instancia el componente');
     }
 
-    componentWillUMount() {
-        console.log('WillUMount: Antes del montaje del componente')
+    componentWillMount() {
+        console.log('WillMount: Antes del montaje del componente');
     }
 
     componentDidMount() {
-        console.log('DidMount: Justo al acabar el montaje del componente,antes de pintarlo')
+        console.log('DidMount: Justo al del montaje del componente, antes de renderizarlo')
     }
 
-    componentWillReceiveProps(nextPros) {
-        console.log('WillReceiveProps: si va a recibir nuevas props')
+    componentWillReceiveProps(nextProps) {
+        console.log('WillReceiveProps: Si va a recibir nuevas props')
     }
 
-    shouldComponentUpdate(nextPros, nextState) {
-        //return true / false
-        //Controlar si el componente debe o noactulizarse
+    shouldComponentUpdate(nextProps, nextState) {
+        /**
+         * Controlar si el componente debe o no actualizarse
+         */
+        // return true / false
     }
 
-    componentWillUpdate(nextPros, nextState) {
-        console.log('WillUpdate: Justo antes de actualizarse')
+    componentWillUpdate(nextProps, nextState) {
+        console.log('WillUpdate: Justo antes de actualizarse');
     }
 
-    componentDidUpdate(nextPros, nextState) {
-        console.log('DidUpdate: Justo despues de actualizarse')
+    componentDidUpdate(prevProps, prevState) {
+        console.log('DidUpdate: Justo después de actualizarse');
     }
 
     componentWillUnmount() {
@@ -41,10 +47,14 @@ class LifeCycleExample extends Component {
     render() {
         return (
             <div>
-                
+
             </div>
         )
     }
+}
 
+LifeCycleExample.propTypes = {
 
 }
+
+export default LifeCycleExample
