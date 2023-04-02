@@ -1,9 +1,10 @@
 import './App.css';
-import { Practica10 } from './components/pure/practica1';
+// import { Practica10 } from './components/pure/practica1';
 // import Optionalrender from './components/pure/optionalRender';
 // import Greeting from './components/pure/greeting';
 // import Greetingf from './components/pure/greetingF';
-// import TaskListComponent from './components/container/task_list';
+import TaskListComponent from './components/container/task_list';
+import { LoginFormik } from './components/pure/forms/loginFormik';
 // import Ejemplo1 from './hooks/Ejemplo1';
 // import Ejemplo2 from './hooks/Ejemplo2';
 // import MiComponenteConContexto from './hooks/Ejemplo3'
@@ -39,11 +40,14 @@ function App() {
       {/* Ejemplos de Renderozadp condicional */}
       {/* <Optionalrender></Optionalrender> */}
 
+      {/* Ejemplos de uso de Formik y Yup */}
+      <LoginFormik></LoginFormik>
+
       {/* PROYECTO FINAL */}
       {/* <TaskListComponent></TaskListComponent> */}
 
 
-      <Practica10></Practica10>
+      {/* <Practica10></Practica10> */}
     </div>
   );
 }
