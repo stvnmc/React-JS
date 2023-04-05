@@ -1,10 +1,11 @@
-import './App.css';
+// import './App.css';
 // import { Practica10 } from './components/pure/practica1';
+import Registerformik from './components/pure/forms/registerFormik'
 // import Optionalrender from './components/pure/optionalRender';
 // import Greeting from './components/pure/greeting';
 // import Greetingf from './components/pure/greetingF';
-import TaskListComponent from './components/container/task_list';
-import { LoginFormik } from './components/pure/forms/loginFormik';
+// import TaskListComponent from './components/container/task_list';
+// import { LoginFormik } from './components/pure/forms/loginFormik';
 // import Ejemplo1 from './hooks/Ejemplo1';
 // import Ejemplo2 from './hooks/Ejemplo2';
 // import MiComponenteConContexto from './hooks/Ejemplo3'
@@ -41,13 +42,17 @@ function App() {
       {/* <Optionalrender></Optionalrender> */}
 
       {/* Ejemplos de uso de Formik y Yup */}
-      <LoginFormik></LoginFormik>
+      {/* <LoginFormik></LoginFormik> */}
 
       {/* PROYECTO FINAL */}
-      {/* <TaskListComponent></TaskListComponent> */}
+      {/* <TaskListComponent></TaskListComponent>
 
 
-      {/* <Practica10></Practica10> */}
+      <Practica10></Practica10> */}
+
+
+
+      <Registerformik></Registerformik>
     </div>
   );
 }
