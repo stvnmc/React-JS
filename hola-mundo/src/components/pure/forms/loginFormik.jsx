@@ -1,8 +1,10 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from 'yup';
 
 export const LoginFormik = () => {
+
 
     const loginSchema = Yup.object().shape(
         {
@@ -19,6 +21,8 @@ export const LoginFormik = () => {
         password: ''
     }
 
+    const history = useHistory();
+
     return (
         <div>
             <h4>Login Formik</h4>
@@ -32,7 +36,8 @@ export const LoginFormik = () => {
                     await new Promise((resolve) => setTimeout(resolve, 1000));
                     alert(JSON.stringify(values, null, 2));
                     //we save the data in the localstorage
-                    localStorage.setItem('credentials', values)
+                    await localStorage.setItem('credentials', values);
+                    history.push('/profile');
                 }}
             >
                 {/* We obtain props from Formik */}

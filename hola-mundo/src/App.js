@@ -52,7 +52,7 @@ function App() {
 
 
 
-      <Registerformik></Registerformik>
+      {/* <Registerformik></Registerformik> */}
     </div>
   );
 }
