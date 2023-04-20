@@ -1,6 +1,6 @@
 // import './App.css';
 // import { Practica10 } from './components/pure/practica1';
-import Registerformik from './components/pure/forms/registerFormik'
+// import Registerformik from './components/pure/forms/registerFormik'
 // import Optionalrender from './components/pure/optionalRender';
 // import Greeting from './components/pure/greeting';
 // import Greetingf from './components/pure/greetingF';
