@@ -11,12 +11,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import AppRoutingOne from './AppRoutingOne';
 import AppRoutingFinal from './AppRoutingFinal';
+import Asyncexample from './components/pure/AsyncExample';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <AppRoutingOne /> */}
-    <AppRoutingFinal />
+    {/* <AppRoutingFinal /> */}
+    <Asyncexample />
   </React.StrictMode>,
   document.getElementById('root')
 );
