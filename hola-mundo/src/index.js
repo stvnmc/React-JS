@@ -10,15 +10,17 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import AppRoutingOne from './AppRoutingOne';
-import AppRoutingFinal from './AppRoutingFinal';
-import Asyncexample from './components/pure/AsyncExample';
+// import AppRoutingFinal from './AppRoutingFinal';
+// import Asyncexample from './components/pure/AsyncExample';
+import ObservableExample from './components/pure/ObservableExample';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <AppRoutingOne /> */}
     {/* <AppRoutingFinal /> */}
-    <Asyncexample />
+    {/* <Asyncexample /> */}
+    <ObservableExample></ObservableExample>
   </React.StrictMode>,
   document.getElementById('root')
 );
