@@ -13,6 +13,8 @@
 // import Greetingstyled from './components/pure/greetingStyled';
 // import Father from './components/container/father';
 
+import Fetchexample from "./components/pure/FetchExample";
+
 function App() {
   return (
     <div className="App">
@@ -46,13 +48,11 @@ function App() {
 
       {/* PROYECTO FINAL */}
       {/* <TaskListComponent></TaskListComponent>
-
-
       <Practica10></Practica10> */}
-
-
-
       {/* <Registerformik></Registerformik> */}
+
+      <Fetchexample />
+
     </div>
   );
 }

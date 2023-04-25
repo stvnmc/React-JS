@@ -7,20 +7,13 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // ! Importante: los estilos propios, deben ir debajo del bootstrap para que no los pise.
 import './index.css';
 
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import AppRoutingOne from './AppRoutingOne';
-// import AppRoutingFinal from './AppRoutingFinal';
-// import Asyncexample from './components/pure/AsyncExample';
-import ObservableExample from './components/pure/ObservableExample';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <AppRoutingOne /> */}
-    {/* <AppRoutingFinal /> */}
-    {/* <Asyncexample /> */}
-    <ObservableExample></ObservableExample>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
