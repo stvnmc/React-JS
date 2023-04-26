@@ -1,3 +1,6 @@
+import { Email } from "@mui/icons-material";
+import { async } from "rxjs";
+
 export const getAllUsers = async () => {
 
 
@@ -30,4 +33,27 @@ export const getUserDetails = async (id) => {
 
     // We return the json
     return response.json()
+}
+
+export const login = async (email, password) => {
+
+    let body = {
+        email,
+        password
+    }
+
+    let response = await fetch('https://reqres.in/api/login', {
+        Smethod: 'POST',
+        // mode: 'no-cors',
+        // credentials: 'omit',
+        // cache: 'no-cache',
+        // headers: {
+        //     'Content-type': 'application/json'
+        // },
+        body,
+
+    });
+
+    return response.json();
+
 }
