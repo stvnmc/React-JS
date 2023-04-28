@@ -13,7 +13,9 @@
 // import Greetingstyled from './components/pure/greetingStyled';
 // import Father from './components/container/father';
 
-import Fetchexample from "./components/pure/FetchExample";
+// import Axiosexample from "./components/pure/AxiosExample";
+import Axioscrudexample from "./components/pure/AxiosCRUDExample"
+// import Fetchexample from "./components/pure/FetchExample";
 
 function App() {
   return (
@@ -51,8 +53,9 @@ function App() {
       <Practica10></Practica10> */}
       {/* <Registerformik></Registerformik> */}
 
-      <Fetchexample />
-
+      {/* <Fetchexample /> */}
+      {/* <Axiosexample />*/}
+      <Axioscrudexample />
     </div>
   );
 }
