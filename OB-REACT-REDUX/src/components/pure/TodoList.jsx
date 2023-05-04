@@ -25,7 +25,7 @@ const TodoList = ({ todos, onTodoClick }) => {
     )
 }
 
-TodoList.prototypes = {
+TodoList.propTypes = {
     todos: PropTypes.arrayOf(
         PropTypes.shape(
             {

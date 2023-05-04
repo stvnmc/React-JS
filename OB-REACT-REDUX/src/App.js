@@ -1,14 +1,14 @@
 
 import './App.css';
 import TodosContainer from './components/containers/TodoContainer';
+import TodoFormContainers from './components/containers/TodoFormContainers';
 
 function App() {
   return (
     <div className="App">
       <header>
-        <TodosContainer>
-
-        </TodosContainer>
+        <TodosContainer />
+        <TodoFormContainers />
       </header>
     </div>
   );
