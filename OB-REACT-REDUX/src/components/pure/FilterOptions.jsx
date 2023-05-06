@@ -1,28 +1,26 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import FilterContainer from '../containers/FilterContainer'
 
 
-export const FilterOptions = ({ active, onClick, children }) => {
 
-    if (active) {
-        return (<span className='active'>{children}</span>)
-    }
+export const FilterOptions = () => {
 
     return (
-        <button className='filter'
-            onClick={(e) => {
-                e.preventDefault();
-                onClick();
-            }}>
-            {children}
-        </button>
+        <div className='filters'>
+            {/* Filter Conteiners */}
+            <FilterContainer filter='SHOW_ALL'>
+                All
+            </FilterContainer>
+            <FilterContainer filter='SHOW_ACTIVE'>
+                ACTIVE
+            </FilterContainer>
+            <FilterContainer filter='SHOW_COMPLETED'>
+                COMPLETED
+            </FilterContainer>
+        </div>
     )
 }
 
-FilterOptions.propType = {
-    active: PropTypes.bool.isRequired,
-    onClick: PropTypes.func.isRequired,
-    children: PropTypes.node.isRequired
-}
+
 
 export default FilterOptions
