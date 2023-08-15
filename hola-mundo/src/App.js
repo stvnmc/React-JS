@@ -2,9 +2,9 @@
 // import { Practica10 } from './components/pure/practica1';
 // import Registerformik from './components/pure/forms/registerFormik'
 // import Optionalrender from './components/pure/optionalRender';
-// import Greeting from './components/pure/greeting';
+import Greeting from './components/pure/greeting';
 // import Greetingf from './components/pure/greetingF';
-// import TaskListComponent from './components/container/task_list';
+import TaskListComponent from './components/container/task_list';
 // import { LoginFormik } from './components/pure/forms/loginFormik';
 // import Ejemplo1 from './hooks/Ejemplo1';
 // import Ejemplo2 from './hooks/Ejemplo2';
@@ -20,14 +20,13 @@ import Axioscrudexample from "./components/pure/AxiosCRUDExample"
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+     
       {/* Componente propio Greeting.jsx */}
       {/* <Greeting name={"Martín"}></Greeting> */}
       {/* Componente de ejemplo funcional */}
       {/* <Greetingf name="Martín"></Greetingf> */}
       {/* Componente de Listado de Tareas */}
-      {/* <TaskListComponent></TaskListComponent> */}
+      <TaskListComponent></TaskListComponent>
       {/* Ejemplos de uso de HOOKS */}
       {/* <Ejemplo1></Ejemplo1> */}
       {/* <Ejemplo2></Ejemplo2> */}
@@ -55,7 +54,7 @@ function App() {
 
       {/* <Fetchexample /> */}
       {/* <Axiosexample />*/}
-      <Axioscrudexample />
+      {/* <Axioscrudexample /> */}
     </div>
   );
 }

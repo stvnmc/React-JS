@@ -1,0 +1,17 @@
+.App {}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.table {}
+
+.hola {
+  display: flex;
+}
+
+.icon {
+  cursor: pointer;
+}
