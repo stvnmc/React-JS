@@ -8,6 +8,11 @@ import {
   Rectangulo,
   devuelveArrayNum,
   devuelveArrayStr,
+  devuelveArrayObj,
+  devuelveTrue,
+  devuelveFalse,
+  devuelveNull,
+  devuelveUndefined,
 } from "./index";
 // Aqui vamos a crear nuestros casos de pruebas
 // describe, test(it)
@@ -50,6 +55,25 @@ describe("Assertions basicos", () => {
   });
 });
 
+describe("Assertions basicos con booleanos", () => {
+  test("Probar que algo es true", () => {
+    const r = devuelveTrue();
+    expect(r).toBeTruthy();
+  });
+  test("Probar que algo es null", () => {
+    const r = devuelveFalse();
+    expect(r).toBeFalsy();
+  });
+  test("Probar que algo es defined", () => {
+    const r = devuelveNull();
+    expect(r).toBeDefined();
+  });
+  test("Probar que algo es undefined", () => {
+    const r = devuelveUndefined();
+    expect(r).toBeUndefined();
+  });
+});
+
 describe("Assertions basicos en los strings", () => {
   test("El campo debe tener un email", () => {
     const email = devuelveEmail();
@@ -86,5 +110,24 @@ describe("Assertions basicos en arrays", () => {
   test("Array contiene 5", () => {
     const ar = devuelveArrayNum();
     expect(ar).toContain(5);
+  });
+  test("Array contiene id: 5", () => {
+    const ar = devuelveArrayObj();
+    expect(ar).toContainEqual({ id: 5 });
+  });
+});
+
+describe("Assertions con funciones mock", () => {
+  test("Que la funcion haya sido llamada", () => {
+    const mockFn = jest.fn(() => 5);
+    const res = mockFn();
+    const res2 = mockFn();
+    const res3 = mockFn();
+    expect(mockFn).toHaveBeenCalledTimes(3);
+  });
+  test("Que la funcion haya sido llamada con un parametro", () => {
+    const mockFn = jest.fn(() => 5);
+    const res = mockFn("prueba");
+    expect(mockFn).toHaveBeenCalledWith("prueba");
   });
 });

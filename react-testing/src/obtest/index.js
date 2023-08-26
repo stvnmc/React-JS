@@ -45,3 +45,8 @@ export const devuelveArrayStr = () => [
   "jamon",
   "yogures",
 ];
+
+export const devuelveTrue = () => true;
+export const devuelveFalse = () => false;
+export const devuelveNull = () => null;
+export const devuelveUndefined = () => undefined;
