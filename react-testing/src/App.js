@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import newInpurNote from "./components/NewInputNote";
+import NewInputNote from "./components/NewInputNote";
+import NoteList from "./components/NoteList";
 
 function App() {
   const [notes, setNotes] = useState(["Go shoppinf"]);
@@ -9,7 +10,8 @@ function App() {
   };
   return (
     <div className="App">
-      <input />
+      <NewInputNote addNewNote={addNewNote} />
+      <NoteList notes={notes} />
     </div>
   );
 }

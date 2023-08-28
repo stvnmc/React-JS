@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 const NewInputNote = ({ addNewNote }) => {
@@ -10,9 +9,10 @@ const NewInputNote = ({ addNewNote }) => {
           type="text"
           placeholder="introduce new note"
           value={newNote}
+          onKeyDown={(e) => e.key === "Enter" && addNewNote(newNote)}
           onChange={(e) => setNewNote(e.target.value)}
         />
-        <button>ADD</button>
+        <button onClick={() => addNewNote(newNote)}>ADD</button>
       </div>
     </div>
   );

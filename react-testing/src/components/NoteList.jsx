@@ -2,9 +2,9 @@ import React from "react";
 
 const NoteList = ({ notes }) => {
   return (
-    <div>
+    <div aria-label="list">
       {notes.map((notes, i) => (
-        <li key={i}>{notes}</li>
+        <div key={i}>{notes}</div>
       ))}
     </div>
   );
