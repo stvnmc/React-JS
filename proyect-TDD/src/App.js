@@ -3,6 +3,15 @@ import "./App.css";
 
 function App() {
   const [busqueda, setBusqueda] = useState("");
+  const [list, setList] = useState("");
+
+  const DoSearch = () => {
+    const url = `https://fr1.api.radio-browser.info/json/stations/byname/${busqueda}`;
+    axios
+      .get(url)
+      .then((r) => setList(r.data))
+      .catch((e) => console.log(e));
+  };
   return (
     <div className="App">
       <h1>
@@ -15,7 +24,11 @@ function App() {
         onChange={(e) => setBusqueda(e.target.value)}
       />
       <button>search</button>
-      <section aria-label="list-stations"></section>
+      <section aria-label="list-stations">
+        {list.map((station, i) => (
+          <div key={i}>{station.name}</div>
+        ))}
+      </section>
     </div>
   );
 }
