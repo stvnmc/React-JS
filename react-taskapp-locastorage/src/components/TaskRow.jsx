@@ -2,10 +2,10 @@ export const TaskRow = ({ task, toggleTask }) => {
   return (
     <tr>
       <td>
-        {task.name}
+        <h2>{task.name}</h2>
         <input
           type="checkbox"
-          value={task.done}
+          checked={task.done}
           onChange={() => toggleTask(task)}
         />
       </td>

@@ -12,6 +12,7 @@ const TaskCreator = ({ createNewTask }) => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        className="inputText"
         type="text"
         placeholder="Enter a new task"
         onChange={(e) => setNewTaskName(e.target.value)}
